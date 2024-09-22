@@ -10,12 +10,14 @@ def index(request):
     # Головна сторінка Журналу спостережень
     return render(request, 'learning_logs/index.html')
 
+
 @login_required
 def topics(request):
     # Відображення усіх тем
     topics = Topic.objects.filter(owner=request.user).order_by('data_added')
     context = {'topics': topics}
     return render(request, 'learning_logs/topics.html', context)
+
 
 @login_required
 def topic(request, topic_id):
@@ -41,11 +43,12 @@ def new_topic(request):
             new_topic = form.save(commit=False)
             new_topic.owner = request.user
             new_topic.save()
-            return redirect('learnind_logs:topics')
+            return redirect('learning_logs:topics')
 
     # Показати порожню або не дійсну форму.
     context = {'form': form}
     return render(request, 'learning_logs/new_topic.html', context)
+
 
 @login_required
 def new_entry(request, topic_id):

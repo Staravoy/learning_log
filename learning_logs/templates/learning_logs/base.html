@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=divice-width, initial-scale=1, shrink-to-fit=no">
-    <title>Журнал досліджень</title>
+    <title>Журнал обліку</title>
     {% bootstrap_css %}
     {% bootstrap_javascript jquery='full' %}
 </head>
 <body>
         <nav class="navbar navbar-expand-md navbar-light bg-light mb-4 border">
-            <a class="navbar-brand" href="{% url 'learning_logs:index' %}">Журнал спостережень</a>
+            <a class="navbar-brand" href="{% url 'learning_logs:index' %}">Журнал обліку транспортних засобів</a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarCollapse" aria-controls="navbarCollapse"
@@ -19,7 +19,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                     <a href="{% url 'learning_logs:topics' %}">Теми</a>
+                     <a href="{% url 'learning_logs:topics' %}">Транспортні засоби:</a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
