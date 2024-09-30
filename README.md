@@ -14,7 +14,9 @@
 
 ___________________________________________________________________________________________________________________________________________________________________
 
-Observation Journal. The application is designed for the ability to take notes, keep records regarding study topics or objects of observation in chronological order.
+Observation Journal.
+
+The application is designed for the ability to take notes, keep records regarding study topics or objects of observation in chronological order.
 
 The application is written using Python and the Django framework.
 
